@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+float pg, mg,pfg;
+float fg;
+
+cout <<"\t----Grade Calculator----";
+
+cout << "\n\nEnter Prelim Grade: ";
+cin >> pg;
+cout << "Enter Midterm Grade: ";
+cin >> mg;
+cout << "Enter Prefinal Grade: ";
+cin >> pfg;
+fg = pg * .30 + mg * .30 + pfg * .40;
+if (fg >= 75 and fg <= 100)
+{
+cout << "Congratulations!!!" << endl;
+cout << "Your grade is: " << fg << endl;
+cout << "You PASSED!";
+}
+else if (fg >= 60 and fg < 75)
+{
+cout << "Bad news " << endl;
+cout << "Your grade is: " << fg << endl;
+cout << "You FAILED!";
+}
+else
+{
+cout <<"Hi!" << endl;
+cout << "Your grade: "<<fg<<" is invalid." << endl;
+cout << "There is something wrong!";
+}
+return 0;
+}
